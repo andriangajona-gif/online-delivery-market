@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-24T08:55:40.972Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Adaugă Coca-Cola 0,5 L în coș\" in \"sticlă 0,5 L\"",
+        "target": {
+          "role": "button",
+          "name": "Adaugă Coca-Cola 0,5 L în coș",
+          "text": "Adaugă",
+          "within": "sticlă 0,5 L"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "order-bravo-products.e2e.ts::order-bravo-products",
+      "targetId": "web",
+      "instructionDigest": "cebab8de1013a41d10649f1711667a9d454673b64ea00a20811985a3798f4f01",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Tapped \"Adaugă\" on Coca-Cola 0,5 L. Cart now shows \"Coș 2\", \"2 produse în coș\", total 123 lei, and the Coca-Cola button reads \"Adăugat\".",
+    "startPath": "/magazin/0",
+    "endPath": "/magazin/0",
+    "endAnchors": [
+      {
+        "text": "2 produse în coș"
+      },
+      {
+        "text": "123 lei"
+      },
+      {
+        "role": "button",
+        "name": "Adaugă Pizza în coș",
+        "text": "Adaugă"
+      },
+      {
+        "role": "button",
+        "name": "Adaugă Coca-Cola 0,5 L în coș",
+        "text": "Adăugat"
+      },
+      {
+        "role": "link",
+        "name": "Coș 2"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "1 produs în coș"
+      },
+      {
+        "role": "button",
+        "name": "Adaugă Pizza în coș",
+        "text": "Adăugat"
+      },
+      {
+        "role": "button",
+        "name": "Adaugă Coca-Cola 0,5 L în coș",
+        "text": "Adaugă"
+      },
+      {
+        "role": "link",
+        "name": "Coș 1"
+      }
+    ],
+    "endWaitMs": 10699,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

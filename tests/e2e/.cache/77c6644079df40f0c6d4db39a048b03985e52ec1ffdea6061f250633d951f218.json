@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-24T08:55:40.973Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"Coș 2\"",
+        "target": {
+          "role": "link",
+          "name": "Coș 2"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "order-bravo-products.e2e.ts::order-bravo-products",
+      "targetId": "web",
+      "instructionDigest": "15ea2b373531e8a01f16bc94e25452c966a89185cb9e8c1ff0ceb7b223d1bd20",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Tapped the \"Coș 2\" cart link; the cart page at /cos opened showing \"Coșul tău\" with Pizza (110 lei) and Coca-Cola 0,5 L (13 lei), 2 products, total 123 lei, plus the delivery form.",
+    "startPath": "/magazin/0",
+    "endPath": "/cos",
+    "endAnchors": [
+      {
+        "text": "Coșul tău"
+      },
+      {
+        "role": "heading",
+        "name": "Finalizează comanda"
+      },
+      {
+        "text": "Verifică produsele, completează datele de livrare și trimite comanda."
+      },
+      {
+        "text": "Pizza"
+      },
+      {
+        "text": "110 lei / bucată"
+      },
+      {
+        "role": "button",
+        "name": "Scade cantitatea pentru Pizza"
+      },
+      {
+        "role": "button",
+        "name": "Crește cantitatea pentru Pizza"
+      },
+      {
+        "role": "button",
+        "name": "Elimină Pizza din coș"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "link",
+        "name": "Toate magazinele"
+      },
+      {
+        "text": "Magazin"
+      },
+      {
+        "text": "Magazin Bravo — pizza și băuturi răcoritoare."
+      },
+      {
+        "role": "searchbox",
+        "name": "Caută produs după nume",
+        "placeholder": "Caută un produs…"
+      },
+      {
+        "text": "2 produse în coș"
+      },
+      {
+        "role": "link",
+        "name": "Vezi coșul"
+      },
+      {
+        "text": "bucată"
+      },
+      {
+        "role": "heading",
+        "name": "Pizza"
+      }
+    ],
+    "endWaitMs": 10782,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

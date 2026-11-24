@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-24T08:55:31.659Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Adaugă produs\"",
+        "target": {
+          "role": "button",
+          "name": "Adaugă produs"
+        }
+      },
+      {
+        "name": "select",
+        "summary": "select \"Linella\" in combobox \"Magazin\"",
+        "target": {
+          "role": "combobox",
+          "name": "Magazin"
+        },
+        "value": "Linella"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Lapte\" into textbox \"Nume produs\"",
+        "target": {
+          "role": "textbox",
+          "name": "Nume produs",
+          "placeholder": "Ex: Lapte proaspăt"
+        },
+        "value": "Lapte"
+      },
+      {
+        "name": "type",
+        "summary": "type \"12\" into spinbutton \"Preț (lei)\"",
+        "target": {
+          "role": "spinbutton",
+          "name": "Preț (lei)",
+          "placeholder": "0"
+        },
+        "value": "12"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Salvează produsul\"",
+        "target": {
+          "role": "button",
+          "name": "Salvează produsul"
+        }
+      },
+      {
+        "name": "select",
+        "summary": "select \"Linella\" in combobox \"Filtrează după magazin\"",
+        "target": {
+          "role": "combobox",
+          "name": "Filtrează după magazin"
+        },
+        "value": "Linella"
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "admin-setup-and-order.e2e.ts::admin-setup-and-order",
+      "targetId": "web",
+      "instructionDigest": "ec5c33a26e2bf1417db9c871e8a17dcc864c5010f63dab2ec261c5246a204ab3",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "The product was saved despite the replay end-mismatch: the Produse list filtered to Linella shows \"Lapte\" (Activ, Linella, 12 lei / buc) with Dezactivează/Editează/Șterge controls.",
+    "startPath": "/admin",
+    "endPath": "/admin",
+    "endAnchors": [
+      {
+        "role": "option",
+        "name": "Toate magazinele"
+      },
+      {
+        "role": "option",
+        "name": "Linella",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "heading",
+        "name": "Lapte"
+      },
+      {
+        "text": "Linella"
+      },
+      {
+        "text": "12 lei / buc"
+      },
+      {
+        "role": "combobox",
+        "name": "Filtrează după magazin",
+        "value": "1"
+      },
+      {
+        "role": "listitem",
+        "name": "Lapte Activ Linella 12 lei / buc Dezactivează Editează Șterge"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "option",
+        "name": "Toate magazinele",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "option",
+        "name": "Linella"
+      },
+      {
+        "role": "heading",
+        "name": "Niciun produs aici"
+      },
+      {
+        "text": "Adaugă primul produs pentru magazinul selectat."
+      },
+      {
+        "role": "combobox",
+        "name": "Filtrează după magazin"
+      }
+    ],
+    "endWaitMs": 10148,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

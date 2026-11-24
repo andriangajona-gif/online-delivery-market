@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-24T08:45:11.588Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Adaugă magazin\"",
+        "target": {
+          "role": "button",
+          "name": "Adaugă magazin"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Linella\" into textbox \"Nume magazin\"",
+        "target": {
+          "role": "textbox",
+          "name": "Nume magazin",
+          "placeholder": "Ex: Linella"
+        },
+        "value": "Linella"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Salvează magazinul\"",
+        "target": {
+          "role": "button",
+          "name": "Salvează magazinul"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "admin-setup-and-order.e2e.ts::admin-setup-and-order",
+      "targetId": "web",
+      "instructionDigest": "7e9fba64dd5b329cdc7fed4688c7348d82be87ce04ea511e6c7752881feacd1c",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Opened \"Adaugă magazin\", typed \"Linella\" in Nume magazin, and saved. The Magazine list now shows the shop \"Linella\" (Activ) with Editează/Șterge/Adaugă produs controls, and the product filter lists \"Linella\".",
+    "startPath": "/admin",
+    "endPath": "/admin",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Linella"
+      },
+      {
+        "text": "Activ"
+      },
+      {
+        "role": "button",
+        "name": "Dezactivează"
+      },
+      {
+        "role": "button",
+        "name": "Editează"
+      },
+      {
+        "role": "button",
+        "name": "Șterge"
+      },
+      {
+        "role": "button",
+        "name": "Adaugă produs"
+      },
+      {
+        "role": "option",
+        "name": "Linella"
+      },
+      {
+        "role": "heading",
+        "name": "Niciun produs aici"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "Niciun magazin încă"
+      },
+      {
+        "text": "Adaugă primul magazin pentru a începe catalogul."
+      },
+      {
+        "role": "heading",
+        "name": "Adaugă mai întâi un magazin"
+      },
+      {
+        "text": "Produsele aparțin unui magazin. Creează unul în secțiunea Magazine."
+      }
+    ],
+    "endWaitMs": 11233,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

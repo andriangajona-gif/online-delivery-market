@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-24T08:56:18.421Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"Magazine\" (1 of 2)",
+        "target": {
+          "role": "link",
+          "name": "Magazine",
+          "position": {
+            "index": 0,
+            "of": 2
+          }
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap link \"Deschis Bravo Magazin Bravo — pizza și …\" in \"Deschis\"",
+        "target": {
+          "role": "link",
+          "name": "Deschis Bravo Magazin Bravo — pizza și băuturi răcoritoare. Intră în magazin",
+          "within": "Deschis"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "admin-edits-bravo-price.e2e.ts::admin-edits-bravo-price",
+      "targetId": "web",
+      "instructionDigest": "e33904cfb92b7b7346baaef8ae095b87d910ebb13bd636c3b9e3778aa7deab1a",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Opened the Bravo shop from the home page; the shop page at /magazin/0 shows heading \"Bravo\" with products Pizza (120 lei pe bucată) and Coca-Cola 0,5 L (13 lei).",
+    "startPath": "/admin",
+    "endPath": "/magazin/0",
+    "endAnchors": [
+      {
+        "role": "link",
+        "name": "Toate magazinele"
+      },
+      {
+        "text": "Magazin"
+      },
+      {
+        "role": "searchbox",
+        "name": "Caută produs după nume",
+        "placeholder": "Caută un produs…"
+      },
+      {
+        "text": "0 produse în coș"
+      },
+      {
+        "text": "0 lei"
+      },
+      {
+        "role": "link",
+        "name": "Vezi coșul"
+      },
+      {
+        "text": "bucată"
+      },
+      {
+        "text": "Pizza Bravo, o bucată."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Administrare"
+      },
+      {
+        "role": "heading",
+        "name": "Panoul administratorului"
+      },
+      {
+        "text": "Gestionează magazinele, produsele, livrarea pe localități și comenzile primite."
+      },
+      {
+        "role": "link",
+        "name": "Produse"
+      },
+      {
+        "role": "link",
+        "name": "Localități"
+      },
+      {
+        "role": "link",
+        "name": "Comenzi"
+      },
+      {
+        "role": "heading",
+        "name": "Magazine"
+      },
+      {
+        "text": "Adaugă, editează sau dezactivează magazinele din catalog."
+      }
+    ],
+    "endWaitMs": 10736,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

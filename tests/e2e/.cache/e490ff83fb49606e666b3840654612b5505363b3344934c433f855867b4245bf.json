@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-24T08:45:11.587Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"Administrare\"",
+        "target": {
+          "role": "link",
+          "name": "Administrare"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "admin-setup-and-order.e2e.ts::admin-setup-and-order",
+      "targetId": "web",
+      "instructionDigest": "be6a09cb42af016e1fe35d2f9eefbd6f872207ad95399cced0b715f9118774d3",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Tapped the \"Administrare\" nav link; the admin panel at /admin now shows \"Panoul administratorului\" with sections Magazine, Produse, Localități, Comenzi, and an \"Adaugă magazin\" button. No stores exist yet (\"Niciun magazin încă\").",
+    "startPath": "/",
+    "endPath": "/admin",
+    "endAnchors": [
+      {
+        "text": "Administrare"
+      },
+      {
+        "role": "heading",
+        "name": "Panoul administratorului"
+      },
+      {
+        "text": "Gestionează magazinele, produsele, livrarea pe localități și comenzile primite."
+      },
+      {
+        "role": "link",
+        "name": "Produse"
+      },
+      {
+        "role": "link",
+        "name": "Localități"
+      },
+      {
+        "role": "link",
+        "name": "Comenzi"
+      },
+      {
+        "role": "heading",
+        "name": "Magazine"
+      },
+      {
+        "text": "Adaugă, editează sau dezactivează magazinele din catalog."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Magazinele satului"
+      },
+      {
+        "role": "heading",
+        "name": "Cumpărăturile de la magazinele din sat, aduse la poartă"
+      },
+      {
+        "text": "Alege magazinul, pune în coș și trimite comanda. Noi o ducem direct la magazinul local, iar cumpărăturile ajung la tine acasă."
+      },
+      {
+        "role": "link",
+        "name": "Vezi coșul"
+      },
+      {
+        "text": "Magazine disponibile"
+      },
+      {
+        "role": "heading",
+        "name": "De unde comanzi astăzi?"
+      },
+      {
+        "role": "heading",
+        "name": "Încă nu sunt magazine deschise"
+      },
+      {
+        "text": "Magazinele din sat își pregătesc oferta. Revino în curând — în scurt timp vei putea comanda."
+      }
+    ],
+    "endWaitMs": 10866,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "overview": "A Romanian online delivery market where customers order groceries and food from several local shops and the order is sent to the owner on Telegram.",
+  "features": [
+    "Browse shops and their products",
+    "Add products from several shops to one cart",
+    "Choose a village or town with its delivery price",
+    "Place an order and receive an order number",
+    "Orders are sent to the owner on Telegram",
+    "Admin panel for shops, products, localities and orders",
+    "Bravo shop with pizza and Coca-Cola"
+  ],
+  "category": "e-commerce",
+  "tags": [
+    "delivery",
+    "market",
+    "romanian",
+    "orders",
+    "telegram"
+  ],
+  "last_updated": "2026-11-24T08:52:27.793Z"
+}

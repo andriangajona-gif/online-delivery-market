@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/assets/fonts/BricolageGrotesque.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/assets/fonts/GeistMono.woff2") format("woff2");
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --font-display: "Bricolage Grotesque", sans-serif;
+    --font-body: "Figtree", sans-serif;
+    --font-mono: "Geist Mono", monospace;
+    --radius: 0.875rem;
+
+    --background: 0.972 0.014 85;
+    --foreground: 0.245 0.042 158;
+    --card: 0.995 0.006 85;
+    --card-foreground: 0.245 0.042 158;
+    --popover: 0.995 0.006 85;
+    --popover-foreground: 0.245 0.042 158;
+
+    --primary: 0.545 0.152 40;
+    --primary-foreground: 0.985 0.008 40;
+
+    --secondary: 0.928 0.022 82;
+    --secondary-foreground: 0.31 0.04 158;
+    --muted: 0.928 0.022 82;
+    --muted-foreground: 0.495 0.028 70;
+
+    --accent: 0.775 0.135 82;
+    --accent-foreground: 0.245 0.042 82;
+
+    --destructive: 0.545 0.185 27;
+    --destructive-foreground: 0.985 0.008 27;
+
+    --success: 0.575 0.135 152;
+    --success-foreground: 0.985 0.008 152;
+    --warning: 0.775 0.135 82;
+    --warning-foreground: 0.245 0.042 82;
+
+    --border: 0.888 0.02 78;
+    --input: 0.888 0.02 78;
+    --ring: 0.545 0.152 40;
+
+    --chart-1: 0.62 0.14 152;
+    --chart-2: 0.58 0.17 27;
+    --chart-3: 0.76 0.14 82;
+    --chart-4: 0.66 0.09 195;
+    --chart-5: 0.545 0.152 40;
+
+    --sidebar: 0.955 0.018 85;
+    --sidebar-foreground: 0.245 0.042 158;
+    --sidebar-primary: 0.545 0.152 40;
+    --sidebar-primary-foreground: 0.985 0.008 40;
+    --sidebar-accent: 0.928 0.022 82;
+    --sidebar-accent-foreground: 0.31 0.04 158;
+    --sidebar-border: 0.888 0.02 78;
+    --sidebar-ring: 0.545 0.152 40;
+
+    --gradient-primary: linear-gradient(
+      135deg,
+      oklch(0.545 0.152 40) 0%,
+      oklch(0.605 0.155 30) 100%
+    );
+    --gradient-subtle: linear-gradient(
+      180deg,
+      oklch(0.995 0.006 85) 0%,
+      oklch(0.962 0.016 82) 100%
+    );
+  }
+
+  .dark {
+    --background: 0.185 0.022 155;
+    --foreground: 0.935 0.012 85;
+    --card: 0.225 0.024 155;
+    --card-foreground: 0.935 0.012 85;
+    --popover: 0.245 0.026 155;
+    --popover-foreground: 0.935 0.012 85;
+
+    --primary: 0.735 0.145 45;
+    --primary-foreground: 0.185 0.022 45;
+
+    --secondary: 0.275 0.028 155;
+    --secondary-foreground: 0.885 0.012 85;
+    --muted: 0.275 0.028 155;
+    --muted-foreground: 0.685 0.018 85;
+
+    --accent: 0.815 0.13 85;
+    --accent-foreground: 0.185 0.022 85;
+
+    --destructive: 0.635 0.175 27;
+    --destructive-foreground: 0.185 0.022 27;
+
+    --success: 0.715 0.135 152;
+    --success-foreground: 0.185 0.022 152;
+    --warning: 0.815 0.13 85;
+    --warning-foreground: 0.185 0.022 85;
+
+    --border: 0.315 0.028 155;
+    --input: 0.315 0.028 155;
+    --ring: 0.735 0.145 45;
+
+    --chart-1: 0.715 0.135 152;
+    --chart-2: 0.665 0.16 27;
+    --chart-3: 0.815 0.13 85;
+    --chart-4: 0.735 0.09 195;
+    --chart-5: 0.735 0.145 45;
+
+    --sidebar: 0.225 0.024 155;
+    --sidebar-foreground: 0.935 0.012 85;
+    --sidebar-primary: 0.735 0.145 45;
+    --sidebar-primary-foreground: 0.185 0.022 45;
+    --sidebar-accent: 0.275 0.028 155;
+    --sidebar-accent-foreground: 0.885 0.012 85;
+    --sidebar-border: 0.315 0.028 155;
+    --sidebar-ring: 0.735 0.145 45;
+
+    --gradient-primary: linear-gradient(
+      135deg,
+      oklch(0.735 0.145 45) 0%,
+      oklch(0.685 0.155 30) 100%
+    );
+    --gradient-subtle: linear-gradient(
+      180deg,
+      oklch(0.225 0.024 155) 0%,
+      oklch(0.195 0.022 155) 100%
+    );
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke, outline-color, opacity, box-shadow,
+      transform, filter, backdrop-filter;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .bg-gradient-primary {
+    background-image: var(--gradient-primary);
+  }
+
+  .bg-gradient-subtle {
+    background-image: var(--gradient-subtle);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Warm paper texture for hero / section bands */
+  .paper-grain {
+    background-image: radial-gradient(
+      oklch(0.545 0.152 40 / 0.06) 1px,
+      transparent 1px
+    );
+    background-size: 18px 18px;
+  }
+}

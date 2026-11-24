@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-24T08:45:11.590Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Adaugă localitate\"",
+        "target": {
+          "role": "button",
+          "name": "Adaugă localitate"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Satul Vesel\" into textbox \"Localitate\"",
+        "target": {
+          "role": "textbox",
+          "name": "Localitate",
+          "placeholder": "Ex: Cojușna"
+        },
+        "value": "Satul Vesel"
+      },
+      {
+        "name": "type",
+        "summary": "type \"25\" into spinbutton \"Preț livrare (lei)\"",
+        "target": {
+          "role": "spinbutton",
+          "name": "Preț livrare (lei)",
+          "placeholder": "0"
+        },
+        "value": "25"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Salvează localitatea\"",
+        "target": {
+          "role": "button",
+          "name": "Salvează localitatea"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "admin-setup-and-order.e2e.ts::admin-setup-and-order",
+      "targetId": "web",
+      "instructionDigest": "618697a97dd59c8a8d97f7b2034163d9051a45f272b92e25ac59aac42ba84fa1",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Opened \"Adaugă localitate\", typed \"Satul Vesel\" and price 25, and saved. The Localități list now shows \"Satul Vesel\" (Activ, 25 lei) with Dezactivează/Editează/Șterge controls.",
+    "startPath": "/admin",
+    "endPath": "/admin",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Satul Vesel"
+      },
+      {
+        "text": "25 lei"
+      },
+      {
+        "role": "listitem",
+        "name": "Satul Vesel Activ 25 lei Dezactivează Editează Șterge"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "Nicio localitate încă"
+      },
+      {
+        "text": "Adaugă localitățile în care livrezi, cu prețul de livrare."
+      }
+    ],
+    "endWaitMs": 10975,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

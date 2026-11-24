@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "admin-edits-bravo-price",
+    "kind": "interactive",
+    "goal": "An administrator changes a Bravo product price and the shop shows the new price",
+    "requirementIndexes": [
+      6
+    ],
+    "acceptanceCriteriaIndexes": [
+      5
+    ],
+    "persona": "admin",
+    "steps": [
+      "Sign in",
+      "Open the admin page",
+      "Change the Pizza price to 120 and save",
+      "Open the Bravo shop"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "Magazine"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "Produse"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "120"
+      },
+      {
+        "afterStep": 3,
+        "expectText": "120 lei"
+      }
+    ]
+  }
+}

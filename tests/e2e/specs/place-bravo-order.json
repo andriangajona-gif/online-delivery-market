@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "place-bravo-order",
+    "kind": "interactive",
+    "goal": "Place an order containing Bravo products and receive an order number",
+    "requirementIndexes": [
+      4,
+      5
+    ],
+    "acceptanceCriteriaIndexes": [
+      3,
+      4
+    ],
+    "steps": [
+      "Open the Bravo shop",
+      "Add Pizza to the cart",
+      "Open the cart",
+      "Fill in the order with the name Ion Popescu, phone 069123456, the first locality offered in the Localitate list and address Strada Mare 5 and press Trimite comanda"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "Pizza"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "Pizza"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "Pizza"
+      },
+      {
+        "afterStep": 3,
+        "expectText": "CMD-"
+      }
+    ]
+  }
+}

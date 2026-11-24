@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-24T08:56:18.420Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "select",
+        "summary": "select \"Bravo\" in combobox \"Filtrează după magazin\"",
+        "target": {
+          "role": "combobox",
+          "name": "Filtrează după magazin"
+        },
+        "value": "Bravo"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Editează\" in \"Pizza\"",
+        "target": {
+          "role": "button",
+          "name": "Editează",
+          "within": "Pizza"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"120\" into spinbutton \"Preț (lei)\" in \"Magazin\"",
+        "target": {
+          "role": "spinbutton",
+          "name": "Preț (lei)",
+          "placeholder": "0",
+          "within": "Magazin"
+        },
+        "value": "120"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Salvează modificările\" in \"Magazin\"",
+        "target": {
+          "role": "button",
+          "name": "Salvează modificările",
+          "within": "Magazin"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "admin-edits-bravo-price.e2e.ts::admin-edits-bravo-price",
+      "targetId": "web",
+      "instructionDigest": "03f9b2c4b0bfc938283bd7e4344928009146d6c0c760cf3e7fced6ae14fa533a",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Filtered products by Bravo, edited Pizza, changed price from 110 to 120 and saved. The product list now shows \"Pizza ... 120 lei / bucată\".",
+    "startPath": "/admin",
+    "endPath": "/admin",
+    "endAnchors": [
+      {
+        "role": "option",
+        "name": "Toate magazinele"
+      },
+      {
+        "role": "option",
+        "name": "Bravo",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "heading",
+        "name": "Pizza"
+      },
+      {
+        "text": "Bravo"
+      },
+      {
+        "text": "120 lei / bucată · Pizza Bravo, o bucată."
+      },
+      {
+        "role": "heading",
+        "name": "Coca-Cola 0,5 L"
+      },
+      {
+        "text": "13 lei / sticlă 0,5 L · Coca-Cola, sticlă de 0,5 L."
+      },
+      {
+        "role": "combobox",
+        "name": "Filtrează după magazin",
+        "value": "0"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "option",
+        "name": "Toate magazinele",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "option",
+        "name": "Bravo"
+      },
+      {
+        "role": "heading",
+        "name": "Niciun produs aici"
+      },
+      {
+        "text": "Adaugă primul produs pentru magazinul selectat."
+      },
+      {
+        "role": "combobox",
+        "name": "Filtrează după magazin"
+      }
+    ],
+    "endWaitMs": 10927,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

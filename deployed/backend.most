@@ -1,0 +1,159 @@
+// Version: 4.0.0
+type AccessControlState__204832294 =
+  {
+    var adminAssigned : Bool;
+    userRoles : Map__175655829<Principal, UserRole__256279894>
+  };
+type CatalogState__72040014 =
+  {
+    localities : Map__175655829<Nat, Locality__751921230>;
+    var nextLocalityId : Nat;
+    var nextProductId : Nat;
+    var nextShopId : Nat;
+    products : Map__175655829<Nat, Product__15225207>;
+    shops : Map__175655829<Nat, Shop__99091159>
+  };
+type Data__1061330525<K, V> =
+  {var count : Nat__565224867; kvs : [var ?(K, V)]};
+type Id__389469852 = Nat;
+type Internal__1060388275<K, V> =
+  {children : [var ?Node__1010487028<K, V>]; data : Data__1061330525<K, V>};
+type Leaf__8515789<K, V> = {data : Data__1061330525<K, V>};
+type Locality__751921230 =
+  {active : Bool; deliveryPriceLei : Nat; id : Nat; name : Text};
+type Locality__813812147 =
+  {active : Bool; deliveryPriceLei : Nat; id : Id__389469852; name : Text};
+type Map__175655829<K, V> = Map__975833162<K, V>;
+type Map__925935234<K, V> =
+  {var root : Node__1010487028<K, V>; var size : Nat__565224867};
+type Map__975833162<K, V> = Map__925935234<K, V>;
+type Nat__565224867 = Nat__920180692;
+type Nat__920180692 = Nat;
+type NewActor__769816496 =
+  {
+    accessControlState : AccessControlState__204832294;
+    catalogState : CatalogState__72040014;
+    ordersState : OrdersState__775875473
+  };
+type Node__1010487028<K, V> =
+  {#internal : Internal__1060388275<K, V>; #leaf : Leaf__8515789<K, V>};
+type OldActor__512397517 = {};
+type OrderLine__242820106 =
+  {
+    productId : Nat;
+    productName : Text;
+    quantity : Nat;
+    shopName : Text;
+    unitPriceLei : Nat
+  };
+type OrderLine__705645396 =
+  {
+    productId : Id__389469852;
+    productName : Text;
+    quantity : Nat;
+    shopName : Text;
+    unitPriceLei : Nat
+  };
+type OrderStatus__272730104 =
+  {#anulata; #confirmata; #inLivrare; #livrata; #noua};
+type OrderStatus__356809266 =
+  {#anulata; #confirmata; #inLivrare; #livrata; #noua};
+type Order__129485232 =
+  {
+    address : Text;
+    createdAt : Int;
+    customerName : Text;
+    deliveryPriceLei : Nat;
+    id : Nat;
+    itemsTotalLei : Nat;
+    lines : [OrderLine__242820106];
+    localityId : Nat;
+    localityName : Text;
+    notes : Text;
+    orderNumber : Text;
+    phone : Text;
+    status : OrderStatus__356809266;
+    telegramSent : Bool;
+    totalLei : Nat
+  };
+type Order__141779993 =
+  {
+    address : Text;
+    createdAt : Timestamp__301639476;
+    customerName : Text;
+    deliveryPriceLei : Nat;
+    id : Id__389469852;
+    itemsTotalLei : Nat;
+    lines : [OrderLine__705645396];
+    localityId : Id__389469852;
+    localityName : Text;
+    notes : Text;
+    orderNumber : Text;
+    phone : Text;
+    status : OrderStatus__272730104;
+    telegramSent : Bool;
+    totalLei : Nat
+  };
+type OrdersState__775875473 =
+  {
+    var nextOrderId : Nat;
+    orders : Map__175655829<Nat, Order__129485232>;
+    telegram : {var botToken : Text; var chatId : Text}
+  };
+type Product__15225207 =
+  {
+    active : Bool;
+    description : Text;
+    id : Nat;
+    name : Text;
+    priceLei : Nat;
+    shopId : Nat;
+    unit : Text
+  };
+type Product__389207432 =
+  {
+    active : Bool;
+    description : Text;
+    id : Id__389469852;
+    name : Text;
+    priceLei : Nat;
+    shopId : Id__389469852;
+    unit : Text
+  };
+type Shop__843727548 =
+  {
+    active : Bool;
+    description : Text;
+    id : Id__389469852;
+    name : Text;
+    sortOrder : Nat
+  };
+type Shop__99091159 =
+  {active : Bool; description : Text; id : Nat; name : Text; sortOrder : Nat};
+type Timestamp__301639476 = Int;
+type UserRole__256279894 = {#admin; #guest; #user};
+{
+  "00000000_000000" : (old : OldActor__512397517) -> NewActor__769816496
+}
+actor  {
+  stable accessControlState :
+    {
+      var adminAssigned : Bool;
+      userRoles : Map__175655829<Principal, UserRole__256279894>
+    };
+  stable catalogState :
+    {
+      localities : Map__175655829<Id__389469852, Locality__813812147>;
+      var nextLocalityId : Nat;
+      var nextProductId : Nat;
+      var nextShopId : Nat;
+      products : Map__175655829<Id__389469852, Product__389207432>;
+      shops : Map__175655829<Id__389469852, Shop__843727548>
+    };
+  stable ordersState :
+    {
+      var nextOrderId : Nat;
+      orders : Map__175655829<Id__389469852, Order__141779993>;
+      telegram : {var botToken : Text; var chatId : Text}
+    }
+};

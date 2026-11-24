@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-24T09:01:20.099Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"Ion Popescu\" into textbox \"Nume și prenume\"",
+        "target": {
+          "role": "textbox",
+          "name": "Nume și prenume",
+          "placeholder": "Ion Popescu"
+        },
+        "value": "Ion Popescu"
+      },
+      {
+        "name": "type",
+        "summary": "type \"069123456\" into textbox \"Telefon\"",
+        "target": {
+          "role": "textbox",
+          "name": "Telefon",
+          "placeholder": "069 123 456"
+        },
+        "value": "069123456"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Strada Mare 5\" into textbox \"Adresă detaliată\"",
+        "target": {
+          "role": "textbox",
+          "name": "Adresă detaliată",
+          "placeholder": "Str. Principală 12, lângă primărie"
+        },
+        "value": "Strada Mare 5"
+      },
+      {
+        "name": "tap",
+        "summary": "tap combobox \"Localitate\"",
+        "target": {
+          "role": "combobox",
+          "name": "Localitate"
+        }
+      },
+      {
+        "name": "select",
+        "summary": "select \"Satul Vesel · livrare 25 lei\" in combobox \"Localitate\"",
+        "target": {
+          "role": "combobox",
+          "name": "Localitate"
+        },
+        "value": "Satul Vesel · livrare 25 lei"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Trimite comanda\"",
+        "target": {
+          "role": "button",
+          "name": "Trimite comanda"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "admin-setup-and-order.e2e.ts::admin-setup-and-order",
+      "targetId": "web",
+      "instructionDigest": "11e70db8fc52f32ca82efc2b59afed98d34c29e9afd067c8c54fb750f3e0cd31",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Selected locality \"Satul Vesel\" (delivery 25 lei) and pressed \"Trimite comanda\". The order was sent: confirmation shows \"Comanda a fost trimisă!\" for Ion Popescu, 069123456, Satul Vesel, Strada Mare 5, order number CMD-0000, Lapte from Linella 12 lei + 25 lei delivery = 37 lei total.",
+    "startPath": "/cos",
+    "endPath": "/cos",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Comanda a fost trimisă!"
+      },
+      {
+        "text": "Îți mulțumim, Ion Popescu. Te contactăm la 069123456 pentru confirmarea livrării."
+      },
+      {
+        "text": "Număr comandă"
+      },
+      {
+        "text": "CMD-0000"
+      },
+      {
+        "role": "heading",
+        "name": "Livrare"
+      },
+      {
+        "text": "Satul Vesel"
+      },
+      {
+        "text": "Adresă"
+      },
+      {
+        "role": "heading",
+        "name": "Produse comandate"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Coșul tău"
+      },
+      {
+        "role": "heading",
+        "name": "Finalizează comanda"
+      },
+      {
+        "text": "Verifică produsele, completează datele de livrare și trimite comanda."
+      },
+      {
+        "role": "heading",
+        "name": "Linella"
+      },
+      {
+        "text": "12 lei / buc"
+      },
+      {
+        "role": "button",
+        "name": "Scade cantitatea pentru Lapte"
+      },
+      {
+        "role": "button",
+        "name": "Crește cantitatea pentru Lapte"
+      },
+      {
+        "role": "button",
+        "name": "Elimină Lapte din coș"
+      }
+    ],
+    "endWaitMs": 11302,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "flows": {
+    "admin-edits-bravo-price": {
+      "flowId": "admin-edits-bravo-price",
+      "specDigest": "e6331a9b4409498b95a4aa0abe66ed9a1dacf0cbbae1e8e9ae3df8e097733f08",
+      "status": "recorded",
+      "recordedAt": "2026-11-24T08:56:18.507Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "360f68db994d0bca26456689683e1acdbcc1b53a92394594427a4826eb3427d8.json",
+        "4fc38adcf9cb53bfad496c2717d50e493cecc3b09fe1da5fbc84895dc098d2a3.json",
+        "a174ab6f1122969e51ccc3b98ab68a1de5a5012391fdffc10db31693e080fc89.json",
+        "aa74b496f522e4af8d655edbf43fa19b8de1f74da2e8a37d7fceb14450623e5d.json"
+      ],
+      "ranAfter": [
+        "order-bravo-products",
+        "place-bravo-order"
+      ],
+      "ranWith": [
+        "order-bravo-products",
+        "place-bravo-order"
+      ],
+      "passedTree": "7b9f9466796191e3014edfc5e0182eb16107c92e",
+      "visitedPaths": [
+        "/",
+        "/admin",
+        "/magazin/0"
+      ]
+    },
+    "admin-setup-and-order": {
+      "flowId": "admin-setup-and-order",
+      "specDigest": "8697135d9c7aac09286b5e5e1a704b09cbfa37816f34d3bf77beef4baa289a5f",
+      "status": "recorded",
+      "recordedAt": "2026-11-24T09:02:43.184Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "8a091bf0a36bf576209990f98be93719874f00ce803651e80efd646200e61c7c.json",
+        "e490ff83fb49606e666b3840654612b5505363b3344934c433f855867b4245bf.json",
+        "2ad58f0ac0500630df9d9d877da36a70bd1b8f5c73ac9046c5c92a332380d38b.json",
+        "b487bf531568ac8a2d6cbbc2b36fb3b02972ea3e24f055e4745fd704e18bf19e.json",
+        "113901681b23a741359e608f75e6f1d90d16ce6f7f597291972d3f928494077e.json",
+        "0b8ec2adf5d47b0b8debc1fb1ecd345386fdd5732e54c7e4efa2a2ce36a3d71c.json",
+        "e5b563c9532eaa66b7c8bbf369c498723d1cc95e27231960279d78386bca5124.json",
+        "cd605099885804df19598bbd76147c5580610e12da59fb197dcc1c50c98381ae.json",
+        "29359fdd78abd2e49f9349bde19ab1fb0610f158b58cb5bbfc48c9f01151fb28.json",
+        "83a93c0ce4fa1da9820c7946b1151b9517a4013e28436ecaf2f2220de140d82a.json",
+        "252f63e1015e376ede69316a2df04168b195a7e05bfa1391c0626ad010a17666.json"
+      ],
+      "ranAfter": [],
+      "ranWith": [],
+      "passedTree": "7b9f9466796191e3014edfc5e0182eb16107c92e",
+      "visitedPaths": [
+        "/",
+        "/admin",
+        "/magazin/1",
+        "/cos"
+      ]
+    },
+    "order-bravo-products": {
+      "flowId": "order-bravo-products",
+      "specDigest": "74aa19254405438c35b89951dae6048233da6e11e54e481a4ba074b510fc6728",
+      "status": "recorded",
+      "recordedAt": "2026-11-24T08:56:18.498Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "cb2dcb9efbae02c3adcf65572faef4c1b4c2fefe0db0a805967f540bcb184649.json",
+        "ec2f30f9a4aae0cd680f671368e03cdb46e8ffaa9a73f95b86c5ffbeaf394dba.json",
+        "2411d53fa4f0cd38435454e2036bfe85b196443a9ce6b909f4522904b0333911.json",
+        "77c6644079df40f0c6d4db39a048b03985e52ec1ffdea6061f250633d951f218.json"
+      ],
+      "ranAfter": [],
+      "ranWith": [],
+      "passedTree": "7b9f9466796191e3014edfc5e0182eb16107c92e",
+      "visitedPaths": [
+        "/",
+        "/magazin/0",
+        "/cos"
+      ],
+      "readOnly": true
+    },
+    "place-bravo-order": {
+      "flowId": "place-bravo-order",
+      "specDigest": "1eb6f2871538b4947e76a2f06bfd35610992efca102e709972f3d3a9f59719c7",
+      "status": "recorded",
+      "recordedAt": "2026-11-24T09:05:16.734Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "5c06a78be94e3c468ac0cffab38caef75890c3b4fc1788f4ff40fc311b88ec41.json",
+        "56981eb7dcb62870e9bd327c5bfef8e711a1ca6bb3940cdec2b561c3142949e4.json",
+        "e03e8f58cf8822a0c4e32834e365757f0995a15f5f1d48ff37c4a9d4061b7a4e.json",
+        "7121aaf315008350c6c86a34839062592b649ef2b1fcaf6bfc097c3d52623059.json"
+      ],
+      "ranAfter": [
+        "order-bravo-products"
+      ],
+      "ranWith": [
+        "order-bravo-products"
+      ]
+    }
+  }
+}

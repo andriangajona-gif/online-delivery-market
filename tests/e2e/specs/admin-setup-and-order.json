@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "admin-setup-and-order",
+    "kind": "interactive",
+    "goal": "Administratorul își configurează magazinul, iar un client plasează o comandă cu livrare la domiciliu",
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
+    "steps": [
+      "Sign in",
+      "Open the admin panel",
+      "Add a shop named Linella and save it",
+      "Add a product named Lapte priced 12 lei in the Linella shop and save it",
+      "Add a delivery locality named Satul Vesel with a delivery price of 25 lei and save it",
+      "Open the shop chooser",
+      "Open the Linella shop",
+      "Add Lapte to the cart",
+      "Open the cart and order page",
+      "Fill the order with the name Ion Popescu, the phone 069123456, the locality Satul Vesel and the address Strada Mare 5 and send it",
+      "Reload the page",
+      "Open the admin panel"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "assert": "The screen shows \"Linella\""
+      },
+      {
+        "afterStep": 1,
+        "expectText": "Magazine"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "Linella"
+      },
+      {
+        "afterStep": 3,
+        "expectText": "Lapte"
+      },
+      {
+        "afterStep": 4,
+        "expectText": "Satul Vesel"
+      },
+      {
+        "afterStep": 5,
+        "expectText": "Linella"
+      },
+      {
+        "afterStep": 6,
+        "expectText": "Lapte"
+      },
+      {
+        "afterStep": 7,
+        "expectText": "Lapte"
+      },
+      {
+        "afterStep": 8,
+        "expectText": "Coșul tău"
+      },
+      {
+        "afterStep": 9,
+        "expectText": "Ion Popescu"
+      },
+      {
+        "afterStep": 10,
+        "expectText": "Linella"
+      },
+      {
+        "afterStep": 11,
+        "expectText": "Ion Popescu"
+      }
+    ]
+  }
+}

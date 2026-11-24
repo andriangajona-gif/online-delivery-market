@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-24T09:04:56.038Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"Ion Popescu\" into textbox \"Nume și prenume\"",
+        "target": {
+          "role": "textbox",
+          "name": "Nume și prenume",
+          "placeholder": "Ion Popescu"
+        },
+        "value": "Ion Popescu"
+      },
+      {
+        "name": "type",
+        "summary": "type \"069123456\" into textbox \"Telefon\"",
+        "target": {
+          "role": "textbox",
+          "name": "Telefon",
+          "placeholder": "069 123 456"
+        },
+        "value": "069123456"
+      },
+      {
+        "name": "select",
+        "summary": "select \"Bălți · livrare 15 lei\" in combobox \"Localitate\"",
+        "target": {
+          "role": "combobox",
+          "name": "Localitate"
+        },
+        "value": "Bălți · livrare 15 lei"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Strada Mare 5\" into textbox \"Adresă detaliată\"",
+        "target": {
+          "role": "textbox",
+          "name": "Adresă detaliată",
+          "placeholder": "Str. Principală 12, lângă primărie"
+        },
+        "value": "Strada Mare 5"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Trimite comanda\"",
+        "target": {
+          "role": "button",
+          "name": "Trimite comanda"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "place-bravo-order.e2e.ts::place-bravo-order",
+      "targetId": "web",
+      "instructionDigest": "e7f97e2de8c1b4dc2c2284d470dcb827098a0496bd956ff4965fb0193bf68fc9",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Filled the delivery form with Ion Popescu, 069123456, first locality Bălți (15 lei delivery) and Strada Mare 5, then pressed Trimite comanda. Confirmation page shows \"Comanda a fost trimisă!\" with order CMD-0000, delivery to Bălți, Strada Mare 5, total 125 lei.",
+    "startPath": "/cos",
+    "endPath": "/cos",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Comanda a fost trimisă!"
+      },
+      {
+        "text": "Îți mulțumim, Ion Popescu. Te contactăm la 069123456 pentru confirmarea livrării."
+      },
+      {
+        "text": "Număr comandă"
+      },
+      {
+        "text": "CMD-0000"
+      },
+      {
+        "role": "heading",
+        "name": "Livrare"
+      },
+      {
+        "text": "Bălți"
+      },
+      {
+        "text": "Adresă"
+      },
+      {
+        "role": "heading",
+        "name": "Produse comandate"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Coșul tău"
+      },
+      {
+        "role": "heading",
+        "name": "Finalizează comanda"
+      },
+      {
+        "text": "Verifică produsele, completează datele de livrare și trimite comanda."
+      },
+      {
+        "role": "heading",
+        "name": "Bravo"
+      },
+      {
+        "text": "110 lei / bucată"
+      },
+      {
+        "role": "button",
+        "name": "Scade cantitatea pentru Pizza"
+      },
+      {
+        "role": "button",
+        "name": "Crește cantitatea pentru Pizza"
+      },
+      {
+        "role": "button",
+        "name": "Elimină Pizza din coș"
+      }
+    ],
+    "endWaitMs": 10914,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

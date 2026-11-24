@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-24T08:55:50.638Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"Deschis Bravo Magazin Bravo — pizza și …\" in \"Deschis\"",
+        "target": {
+          "role": "link",
+          "name": "Deschis Bravo Magazin Bravo — pizza și băuturi răcoritoare. Intră în magazin",
+          "within": "Deschis"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "place-bravo-order.e2e.ts::place-bravo-order",
+      "targetId": "web",
+      "instructionDigest": "4f48155ea3e3c5bb4368174284371d26104aac98de7a4a603444b87be8677d2a",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Opened the Bravo shop from the home page; the store page at /magazin/0 shows heading \"Bravo\" with products Pizza (110 lei) and Coca-Cola 0,5 L (13 lei), cart at 0 produse.",
+    "startPath": "/",
+    "endPath": "/magazin/0",
+    "endAnchors": [
+      {
+        "role": "link",
+        "name": "Toate magazinele"
+      },
+      {
+        "text": "Magazin"
+      },
+      {
+        "role": "searchbox",
+        "name": "Caută produs după nume",
+        "placeholder": "Caută un produs…"
+      },
+      {
+        "text": "0 produse în coș"
+      },
+      {
+        "text": "0 lei"
+      },
+      {
+        "text": "bucată"
+      },
+      {
+        "role": "heading",
+        "name": "Pizza"
+      },
+      {
+        "text": "Pizza Bravo, o bucată."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Magazinele satului"
+      },
+      {
+        "role": "heading",
+        "name": "Cumpărăturile de la magazinele din sat, aduse la poartă"
+      },
+      {
+        "text": "Alege magazinul, pune în coș și trimite comanda. Noi o ducem direct la magazinul local, iar cumpărăturile ajung la tine acasă."
+      },
+      {
+        "text": "Magazine disponibile"
+      },
+      {
+        "role": "heading",
+        "name": "De unde comanzi astăzi?"
+      },
+      {
+        "text": "Deschis"
+      },
+      {
+        "text": "Intră în magazin"
+      },
+      {
+        "text": "Cum funcționează"
+      }
+    ],
+    "endWaitMs": 10888,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

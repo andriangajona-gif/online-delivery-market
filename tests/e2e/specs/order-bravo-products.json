@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "order-bravo-products",
+    "kind": "interactive",
+    "goal": "Open the Bravo shop, add pizza and Coca-Cola to the cart and see the combined total",
+    "requirementIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "acceptanceCriteriaIndexes": [
+      0,
+      1,
+      2,
+      6
+    ],
+    "steps": [
+      "Open the Bravo shop",
+      "Add Pizza to the cart",
+      "Add Coca-Cola 0,5 L to the cart",
+      "Open the cart"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "Pizza"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "110 lei"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "13 lei"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "Pizza"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "Coca-Cola"
+      },
+      {
+        "afterStep": 3,
+        "expectText": "123 lei"
+      }
+    ]
+  }
+}
